@@ -17,3 +17,7 @@ btn.addEventListener("mouseenter", (e) => {
   ripple.style.top = `${top}px`;
   btn.prepend(ripple);
 });
+
+btn.addEventListener("mouseleave", (e) => {
+  btn.removeChild(ripple);
+});
